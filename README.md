@@ -33,9 +33,9 @@ Computer busted, you win!
 Computer X 8
 You 5 7
 
-Hit/Stick(h/s)? h
+Hit/Stick(h/s)? h  // "h" means the player draws a card 
 You get a 7
-Hit/Stick(h/s)? s
+Hit/Stick(h/s)? s  // "s" means the player draws a card
 
 Computer 10 8
 You win 19 to 18!
