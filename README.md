@@ -15,7 +15,7 @@ King, Queen, Jack and 10 are all worth 10.  2 to 9 are worth their face value.  
 Computer X 8
 You 5 7
 
-Hit/Stick(h/s)? h
+Hit/Stick(h/s)? h   // "h" means the player draws a card
 You get a 7
 Hit/Stick(h/s)? s
 
@@ -26,7 +26,7 @@ Computer busted, you win!
 Computer X 8
 You 5 7
 
-Hit/Stick(h/s)? h  // "h" means the player draws a card 
+Hit/Stick(h/s)? h  
 You get a 7
 Hit/Stick(h/s)? s  // "s" means the player draws a card
 
