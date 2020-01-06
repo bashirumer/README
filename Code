@@ -1,0 +1,113 @@
+// The "LoopingAssignment" class.
+import java.awt.*;
+import hsa.Console;
+
+public class LoopingAssignment
+{
+    static Console c;           // The output console
+
+    public static void main (String[] args)
+    {
+	c = new Console ();
+	String name;
+	int c1, c2, p1, p2, ctotal, ptotal, card1, card2;
+	char choice;
+
+	c1 = (int) (Math.random () * 10 + 1); // Compuers card 1
+	c2 = (int) (Math.random () * 10 + 1); // Compuers card 2
+	p1 = (int) (Math.random () * 10 + 1); // Persons card 1
+	p2 = (int) (Math.random () * 10 + 1); // Persons card 2
+
+	ctotal = c1 + c2; // Total of computers card
+	ptotal = p1 + p2; // Total of persons card
+
+	c.println ("Welcome to Blackjack!!!");
+	c.println ();
+
+	//Input data
+	c.println ("What is your name?");
+	name = c.readString ();
+	c.println ();
+	c.println ("Welcome to BlackJack " + name + ", are you destined to win?");
+	c.println ();
+	c.println ("Find out by playing Black Jack");
+	c.println ();
+
+	//Computers Crad Display:
+	c.println ("Computer  X  " + c2);
+
+	//Person Card Display:
+	c.println (name + "  " + p1 + "  " + p2);
+	c.println ();
+
+	// Input:
+	c.print ("Hit/Stick (h/s) ? ");
+	// h =  person will darw a new  card
+	// s = computer will darw a new card
+	choice = c.getChar ();
+	c.println (choice);
+
+	//While Loopig:
+	while (choice == 'h' && ptotal <= 21) // Will excute this code if the users wants to draw a card and their total is not already over a 21;
+	{
+	    card1 = (int) (Math.random () * 10 + 1); // new card user draws
+	    ptotal = ptotal + card1;
+
+	    c.println ("You drew a " + card1); // Display
+
+	    if (ptotal <= 21)
+	    {
+		c.print ("Hit/Stick (h/s) ? ");
+		choice = c.getChar ();
+		c.println (choice);
+	    }
+
+	}
+	if (ptotal > 21)
+
+	    {
+		c.println ();
+		c.println ("You busted, You lose"); // Output
+	    }
+
+
+	else // You didn't lose
+
+	    {
+		while (ctotal <= 17) // compter will keep on drawing cards until its total is remain less thsn 17
+		{
+		    card2 = (int) (Math.random () * 10 + 1); // computers new card
+		    ctotal = ctotal + card2;
+		    c.println ("Computer drew a  " + card2 + "   "); // Diaplay
+		}
+		if (ctotal > 21)
+		{
+		    c.println ("Computer busted, you win! "); // Output
+		}
+	    }
+	c.println ();
+
+	if (ctotal > 17 && ctotal <21 && ptotal<21) // Computer will excute this if the users and computer total are less than 21
+	{
+	    if (ctotal < ptotal) // Computer won
+	    {
+		c.println ("You win " + ptotal + " to " + ctotal);
+
+	    }
+	    if
+		(ptotal < ctotal) // Person won
+	    {
+		c.println ("Computer win " + ctotal + " to " + ptotal);
+	    }
+	    if (ctotal == ptotal) // Tie Game
+	    {
+		c.println ("It's a tie game ");
+	    }
+
+
+	}
+
+       
+
+    } // main method
+} // LoopingAssignment class
