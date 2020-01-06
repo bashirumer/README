@@ -10,12 +10,11 @@ The computer will take cards until it has reached a total of 17 or higher.  If i
   # Cards Worth:
 King, Queen, Jack and 10 are all worth 10.  2 to 9 are worth their face value.  An Ace is worth  11.  
 
-
   # Sample Output #1:
 Computer X 8
 You 5 7
 
-Hit/Stick(h/s)? h   // "h" means the player draws a card
+Hit/Stick(h/s)? h  
 You get a 7
 Hit/Stick(h/s)? s
 
@@ -28,7 +27,7 @@ You 5 7
 
 Hit/Stick(h/s)? h  
 You get a 7
-Hit/Stick(h/s)? s  // "s" means the player draws a card
+Hit/Stick(h/s)? s
 
 Computer 10 8
 You win 19 to 18!
