@@ -39,8 +39,3 @@ Hit/Stick(h/s)? s
 
 Computer 10 8
 You win 19 to 18!
-
-
-
-
-
